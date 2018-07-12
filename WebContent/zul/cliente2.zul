@@ -1,0 +1,38 @@
+<?page title="Mantenedor de cliente" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+<style>
+.myClase{
+border-style: solid;
+
+}
+.prueba{
+background-color: lightblue;
+}
+</style>
+
+	<window title="Mantenedor de cliente" border="normal" width="100%" height="100%"
+	 apply="org.zkoss.bind.BindComposer"
+	 viewModel="@id('vm') @init('cl.gmo.controllers.ControllerCliente2')">
+	
+	
+	<div sclass="myClase" >
+		<vbox>
+		<hbox>
+			<label value="Rut" />
+			<textbox sclass="prueba" value="@bind(vm.nif)"/>
+			<textbox value="@bind(vm.muestra)"/>
+			</hbox>
+			<button label="Buscar" onClick="@command('buscar')"/>
+			
+			<radiogroup>
+				<radio />
+				<radio />
+			</radiogroup>
+		</vbox>
+	</div>	
+		
+		
+		
+	</window>
+</zk>

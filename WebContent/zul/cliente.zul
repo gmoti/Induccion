@@ -1,0 +1,38 @@
+<?page title="Mantenedor de cliente" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+<style>
+.myClase{
+border-style: solid;
+
+}
+.prueba{
+background-color: lightblue;
+}
+</style>
+
+
+
+
+	<window title="Mantenedor de cliente" border="normal" width="100%" height="100%" apply="cl.gmo.controllers.ControllerCliente">
+	
+	<div sclass="myClase" >
+		<vbox>
+		<hbox>
+			<label value="Rut" />
+			<textbox sclass="prueba" id="rut"/>
+			<textbox id="respuesta"/>
+			</hbox>
+			<button label="Buscar" id="buscar"/>
+			
+			<radiogroup>
+				<radio />
+				<radio />
+			</radiogroup>
+		</vbox>
+	</div>	
+		
+		
+		
+	</window>
+</zk>
